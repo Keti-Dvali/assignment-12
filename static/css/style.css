@@ -458,6 +458,10 @@ img, button {
     html {
         font-size: 10px;
     }
+    .middle-right-section {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
     .right-side {
         width: 100%;
     }
