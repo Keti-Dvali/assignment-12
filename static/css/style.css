@@ -474,6 +474,7 @@ img, button {
     }
     .nav-left {
         width: 25%;
+        margin: 0 1rem 0 2rem;
     }
     .slogan {
         display: none;
@@ -559,6 +560,13 @@ img, button {
 }
 
 @media (max-width: 534px){
+    .nav-left {
+        margin: 0 1rem 0 1rem;
+    }
+    .middle-right-section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .logo {
         width: 85%;
     }
