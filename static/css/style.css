@@ -1,0 +1,642 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'WorkSans-Regular';
+    background-color: #D8D8D8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img, button {
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+
+.container-left {
+    max-width: 200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-left {
+    width: 20%;
+    /* padding: 1rem 1.2rem 0rem 2rem; */
+    margin: 0 2rem 0 3rem;
+    background-color: #fff;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    color: #303030; 
+}
+.pinned-items li span:last-child:not(::before){
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.profile-pic {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic div img {
+    width: 100%;
+}
+
+.slogan {
+    margin-top: 1rem;
+    color: #1F50FF;
+    font-size: .7rem;
+    justify-content: center;
+}
+
+.friends-num {
+    justify-content: space-around;
+    font-size: .8rem;
+}
+
+.first-li {
+    justify-content: center;
+    padding-bottom: .7rem;
+}
+
+.notifications li, .pinned-items li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    font-size: .9rem;
+}
+
+.notifications li span:last-child, .pinned-items li span:last-child{
+    padding-left:1rem;
+}
+
+.pinned h4 {
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.pinned-items li div {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #E9E9E9;
+    position: relative;
+}
+
+.pinned-items li div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.pinned-items li:last-child {
+    margin-top: 2rem;
+}
+
+/* right-nav */
+
+.right-side {
+    width: 70%;
+}
+
+.nav-right {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.home-icon {
+    width: 7.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-form img {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem; 
+    z-index: 2;
+}
+
+.search-form input {
+    position: relative;
+    padding: .8rem 12rem .7rem 3rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #F7F7F7; 
+    z-index: 1;
+}
+
+.right-top {
+    justify-content: space-between;
+    align-items: center;
+    width: 8rem;
+}
+
+.right-top img:nth-child(4){
+    display: none;
+}
+
+.right-top img {
+    width: 24px;
+    height: 24px;
+}
+
+.right-top img:last-child{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 5px solid  #D8D8D8;
+
+}
+
+/* middle-section */
+
+.middle-section, .middle-right-section {
+    background-color: #fff;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.middle-section {
+    width: 100%;
+}
+
+.middle-right-section {
+    width: 30%;
+    margin-left: 2rem;
+}
+
+.share-sth {
+    padding-top: 1rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.share-sth img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.share-sth input {
+    width: 100%;
+    padding: 1rem 15rem 1rem 1.5rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #F7F7F7; 
+}
+
+.right-border {
+    border-right: 1px solid #EBEBEB;
+}
+
+.share {
+    justify-content: space-between;
+}
+
+.share li:not(:last-child) {
+    color: #303030;
+    font-size: .8rem;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.share-list {
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.three-dot {
+    display: none;
+}
+
+.share-btn {
+    padding: .7rem 1.5rem .8rem .7rem;
+    border-radius: 1.3rem;
+    color: #fff;
+    background-color: #1F50FF;
+    border: none;
+}
+    
+.vector {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    z-index: 2;
+}
+
+.vector-2 {
+    display: none;
+}
+
+/* second middle */
+
+.container {
+    max-width: 650px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.prof-pic-div, .prof-pic-div-2, .prof-pic-div-3 {
+    padding-top: 1rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* for mobile */
+.prof-pic-div-3 {
+    display: none;
+}
+/* till this */
+
+
+/* tablet */
+.prof-pic-div-2 {
+    display: none;
+}
+/* till this */
+
+.prof-pic img {
+    border-radius: 50%;
+}
+
+.user-name ul li:first-child {
+    font-size: .8rem;
+    color:#303030;
+    padding-bottom: .5rem;
+}
+
+.user-name ul li:last-child {
+    font-size: .7rem;
+    color: #4B71F9;
+}
+
+.post {
+    padding-bottom: 1rem;
+    font-size: .8rem;
+    color: #555555;
+    line-height: 1rem;
+}
+/* tablet from this */
+.post-3 {
+    display: none;
+}
+/* tablet till thiiss */
+
+/* for mobile */
+
+.post-4 {
+    display: none;
+}
+/* till this */
+.post-pic, .post-pic-2 {
+    width: 100%;
+}
+
+/* tablet */
+.post-pic-2{
+    display: none;
+}
+/* till this */
+
+.post-react {
+    padding-top: 1rem;
+    gap: 2rem;
+}
+
+.post-react li img {
+    width: 100%;
+}
+
+.see-more, .see-more-3 {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* tablet */
+.see-more-3 {
+    display: none;
+}
+/* till this */
+
+.see-more-2 {
+    color: #1F50FF;
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+.see-more-2:hover {
+    color: #133097;
+}
+
+.margin-bottom {
+    margin-bottom: 0;
+}
+
+/* middle-right-section */
+
+.middle-right-section {
+    width: 30%;
+    margin-left: 2rem;
+}
+
+.container-middle-right {
+    max-width: 225px;
+    width: 90%;
+    margin: 2.5rem auto;
+}
+
+.open-book {
+    display: none;
+}
+
+.title {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.city-building {
+    margin: 1rem 0rem 3rem 0rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.birthday-title {
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.contacts {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.birthday {
+    color: #555555;
+    font-size: .7rem;
+    line-height: .8rem;
+}
+
+.girl-pic {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.person, .more, .edit {
+    align-items: center;
+    gap: .6rem;
+    margin-top: .8rem;
+    cursor: pointer; 
+}
+
+.person-name {
+    font-size: .7rem;
+    color: #555555;
+}
+
+.see-more-4 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgb(233 233 233);
+    position: relative;
+}
+
+.more, .edit {
+    gap: 2.4rem;
+}
+
+.text {
+    color: #303030;
+    font-size: .7rem;
+}
+
+.sign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-icon-2 {
+    display: none;
+}
+
+
+@media (max-width: 1145px){
+    html {
+        font-size: 10px;
+    }
+    .right-side {
+        width: 100%;
+    }
+    .home-icon div img {
+        width: 80%;
+    }
+    .profile-pic div img {
+        width: 50%;
+    }
+    .search-form img {
+        width: 1.5rem;
+        top: 29%;
+        left: 3%;
+    }
+    .nav-left {
+        width: 25%;
+    }
+    .slogan {
+        display: none;
+    }
+    .search-form input {
+        padding: 0.8rem 4rem 0.7rem 3rem;
+    }
+    .search-form input::placeholder {
+        font-size: 1rem;
+    }
+    .right-top{
+        width: 6rem;
+    }
+    .right-top img:not(:last-child) {
+        display: none;
+    }
+    .right-top img:nth-child(4){
+        display: inherit;
+        width: 30%;
+    }
+    .right-top img:last-child {
+        border: none;
+        width: 55%;
+    }
+    .profile-pic {
+        text-align: center;
+        flex-direction: column;
+    }
+    .share-sth form input {
+        padding: 0.8rem 5rem 0.8rem 1.5rem;
+    }
+    .share-sth form input::placeholder {
+        font-size: 1rem;
+    }
+    .share li:not(:last-Child) span img {
+        width: 60%;
+    }
+    .vector {
+        width: 14%;
+        top: 1.1rem;
+        left: 3.7rem;
+    }
+    .share-btn {
+        font-size: 1rem;
+    }
+    .post-react li img {
+        width: 70%;
+    }
+    .birthday-title img {
+        width: 15%;
+    }
+    .contacts img {
+        width: 24%;
+    }
+    .friends-num ul:not(:first-child){
+        display: none;
+    }
+    .notifications li span img  {
+       width: 12px;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .pinned-items li {
+        display: flex;
+        justify-content: center;
+    }
+    .post-pic-1 {
+        display: none;
+    }
+    .post-pic-2 {
+        display: inherit;
+    }
+    .see-more-3 {
+        display: flex;
+    }
+    .prof-pic-div-2 {
+        display: flex;
+    }
+    .post-3 {
+        display: inherit;
+    }
+}
+
+@media (max-width: 534px){
+    .logo {
+        width: 85%;
+    }
+    .notifications li span:last-child{
+        display: none;
+    }
+    .notifications li {
+        justify-content: center;
+    }
+    .pinned-items li span:last-child{
+        display: none;
+    }
+    .pinned-items li {
+        justify-content: center;
+    }
+    .home-icon {
+        width: 2.5rem;
+    }
+    .home-icon div:last-child {
+        display: none;
+    }
+    .share li:nth-child(4), .share li:nth-child(5){
+        display: none;
+    }
+    .prof-pic-div-2 {
+        display: none;
+    }
+    .prof-pic-div-3 {
+        display: flex;
+    }
+    .post-4 {
+        display: inherit;
+    }
+    .article h4, .city-building, .article a {
+        display: none;
+    }
+    .open-book {
+        display: flex;
+        margin: 0 auto;
+    }
+    .vector-2-div {
+        width: 2rem; 
+        height: 2rem;
+        background-color: #E9E9E9;
+        border-radius: 50%;
+        position: relative;
+        margin: 2rem auto;
+    }
+    .vector-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;  
+    }
+    .birthday-title img{
+        margin: 0 auto;
+        width: 40%;
+    }
+    .birthday-title h4, .birthday {
+        display: none;
+    }
+    .contacts img:last-child, .title {
+        display: none;
+    }
+    .search-icon-2 {
+        display: flex;
+        margin: 2rem auto;
+    }
+    .person span:last-child, .more span:last-child, .edit span:last-child {
+        display: none;
+    }
+    .person span:first-child, .more span:first-child, .edit span:first-child {
+        display: flex;
+        justify-content: center;
+        margin: .5rem auto;
+    }
+    .three-dot {
+        display: flex;
+    }
+}
