@@ -652,3 +652,57 @@ img, button {
         display: flex;
     }
 }
+
+@media (max-width: 400px){
+    html {
+        font-size: 7px;
+    }
+    .profile-pic div:nth-child(2){
+        font-size: .8rem;
+    }
+    .search-form input {
+        padding: 0.8rem 0rem 0.7rem 3rem;
+    }
+    .right-top img:last-child {
+        border: none;
+        width: 44%;
+        height: 44%;
+    }
+    .share-sth {
+        padding-top: 1rem;
+        gap: 1rem;
+        align-items: center;
+    }
+    .right-top {
+        justify-content: flex-start;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .middle-right-section {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .nav-left {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+    .share-sth img {
+        width: 70%;
+        border-radius: 50%;
+    }
+    .open-book {
+        display: flex;
+        margin: 0 auto;
+        width: 61%;
+    }
+    .prof-pic img {
+        border-radius: 50%;
+        width: 75%;
+    }
+    .pinned-items li span{
+        width: 79%;
+        justify-content: end;
+    }
+    .pinned-items li span img {
+        width: 70%;
+    }
+}
